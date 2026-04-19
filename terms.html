@@ -44,6 +44,29 @@
       font-weight: 600;
       flex: 1;
     }
+    .lang-switch {
+      display: flex;
+      gap: 2px;
+      background: rgba(255,255,255,0.15);
+      padding: 3px;
+      border-radius: 8px;
+    }
+    .lang-switch a {
+      padding: 5px 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.8);
+      transition: all 0.2s;
+    }
+    .lang-switch a.active {
+      background: white;
+      color: #2C813F;
+    }
+    .lang-switch a:not(.active):hover {
+      color: white;
+    }
     .container {
       max-width: 760px;
       margin: 0 auto;
@@ -96,6 +119,10 @@
     <div class="header-inner">
       <a href="./index.html" class="back">← Voltar</a>
       <h1>DailyVet</h1>
+      <div class="lang-switch">
+        <a href="./terms.html" class="active">PT</a>
+        <a href="./terms.en.html">EN</a>
+      </div>
     </div>
   </div>
 
